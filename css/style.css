@@ -16,7 +16,7 @@
 
 /* Left Box Layout */
 
-.MenuBox {margin: 20px 10px 10px 175px; background-image:  url('./img/pawprintwallpaper.jpg'); background-size: cover; border-style: dotted; width: 50%;  height: 10%;  border-color:#A9A9A9;}
+.MenuBox {margin: 20px 10px 10px 175px; background-image:  url('../img/pawprintwallpaper.jpg'); background-size: cover; border-style: dotted; width: 50%;  height: 10%;  border-color:#A9A9A9;}
 .MenuText {font-family: 'Sacramento', cursive; color: #A9A9A9; text-shadow: 2px 2px #976038; font-size: 210%; text-align: center;}
 
 /* Footer Box Layout */
