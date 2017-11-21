@@ -10,12 +10,21 @@
 
 .HeaderBox {float; top; border-style: solid; width: 100%; height: 300px; border-color: #976038;}
 
-.HeaderText {font-family: 'Sacramento', cursive; color: #976038; font-size: 300%; text-align: center;}
+.HeaderText {font-family: 'Sacramento', cursive; color: #976038; font-size: 270%; text-align: center; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #A9A9A9;}
 
-/* Page Layout Boxes */
+.HeaderText1 {font-family: 'Sacramento', cursive; color: #976038; font-size: 200%; text-align: center;}
+
+/* Left Box Layout */
+
+.MenuBox {margin: 20px 10px 10px 175px; background-image:  url('../img/pawprintwallpaper.jpg'); background-size: cover; border-style: dotted; width: 50%;  height: 10%;  border-color:#A9A9A9;}
+.MenuText {font-family: 'Sacramento', cursive; color: #A9A9A9; text-shadow: 2px 2px #976038; font-size: 210%; text-align: center;}
+
+/* Footer Box Layout */
+#BottomBox {display: flex; flex-direction: row; border-style: solid; height: 150px; border-color: #000000; background-color: #D3D3D3;}
+
 
       
-    /* Top Section */ 
+    /* To remove */ 
 
 
 
@@ -43,8 +52,6 @@
     
     /* Bottom Section */
     
-#BottomBox {display: flex; flex-direction: row; border-style: solid; height: 150px; border-color: #000000; background-color: #D3D3D3;}
-
 
 
 
