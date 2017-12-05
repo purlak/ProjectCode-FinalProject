@@ -2,13 +2,13 @@
 
 .background {background-color:  #000000;}
 
-.LeftBox {float: left; border-style: solid; width: 54%; height: 960px; border-color: #976038;}
+.LeftBox {float: left; border-style: solid; width: 54%; height: 960px; border-color: #000000;}
 
-.RightBox {float: right; width: 45%; height: 960px;  border-style: solid; border-color: #976038;}
+.RightBox {float: right; width: 45%; height: 960px;  border-style: solid; border-color: #000000;}
 
 .homepagePic {width: 100%; height: 960px;}
 
-.HeaderBox {float; top; border-style: solid; width: 100%; height: 300px; border-color: #976038;}
+.HeaderBox {float; top; border-style: solid; width: 100%; height: 300px; border-color: #000000;}
 
 .HeaderText {font-family: 'Sacramento', cursive; color: #976038; font-size: 270%; text-align: center; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #A9A9A9;}
 
@@ -16,14 +16,191 @@
 
 /* Left Box Layout */
 
-.MenuBox {margin: 20px 10px 10px 175px; background-image:  url('../img/pawprintwallpaper.jpg'); background-size: cover; border-style: dotted; width: 50%;  height: 10%;  border-color:#A9A9A9;}
-.MenuText {font-family: 'Sacramento', cursive; color: #A9A9A9; text-shadow: 2px 2px #976038; font-size: 210%; text-align: center;}
+.MenuBox { display: flex; flex-direction: column; margin: 20px 10px 10px 175px; background-image:  url('../img/pawprintwallpaper.jpg'); background-size: cover; border-style: dotted; width: 50%;  height: 10%;  border-color:#000000;}
+.MenuText {font-family: 'Sacramento', cursive; color: #A9A9A9; text-shadow: 2px 2px #976038; font-size: 250%; text-align: center; text-decoration: none; padding: 25px;}
 
 /* Footer Box Layout */
-#BottomBox {display: flex; flex-direction: row; border-style: solid; height: 150px; border-color: #000000; background-color: #D3D3D3;}
+#BottomBox {display: flex; flex-direction: row; border-style: solid; height: 150px; border-color: #ffffff; background-color: #D3D3D3;}
+
+.SpaceBox {display: flex; justify-content: space-around; background-color: #000000; font-size: 5em; padding: 15px; border-top-style: double; border-bottom-style: double; height: 50px; border-color: #976038;}
 
 
-      
+/* Social Media CSS - from www.joevengels.de */
+
+.icon-button {
+  background-color: black;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.6rem;
+}
+
+/* Circle 
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem;
+}
+*/
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+.tumblr span {
+  background-color: #34526f;
+}
+.instagram span {
+  background-color: #517fa4;
+}
+.youtube span {
+  background-color: #bb0000;
+}
+.pinterest span {
+  background-color: #cb2027;
+}
+
+
+
+.icon-button .icon-twitter {
+  color: #4099ff;
+}
+.icon-button .icon-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-tumblr {
+  color: #34526f;
+}
+.icon-button .icon-google-plus {
+  color: #db5a3c;
+}
+.icon-button .fa-instagram {
+  color: #517fa4;
+}
+.icon-button .fa-youtube {
+  color: #bb0000;
+}
+.icon-button .fa-pinterest {
+  color: #cb2027;
+}
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+  color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  body {
+
+    padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
+
+/* About Us */ 
+
+.LeftBox1 {float: left; border-style: solid; width: 45%; height: 960px; border-color: #000000;}
+
+.RightBox1 {float: right; width: 54%; height: 960px;  border-style: solid; border-color: #000000;}
+
+.HeaderBox1 {float; top; border-style: solid; width: 100%; height: 300px; border-color: #000000;}
+
+.HeaderText2 {font-family: 'Sacramento', cursive; color: #0d98ba; font-size: 270%; text-align: center; text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #A9A9A9;}
+
+.HeaderText3 {font-family: 'Sacramento', cursive; color: #0d98ba; font-size: 200%; text-align: center;}
+
+.SpaceBox1 {display: flex; justify-content: space-around; background-color: #000000; font-size: 5em; padding: 15px; border-top-style: double; border-bottom-style: double; height: 50px; border-color: #0d98ba;}
+
+
+.ptext {color: #0d98ba; font-family: 'Sacramento', cursive; font-size: 170%; text-align: justify;}
+   
+
+    /* Resources */  
+
+.Box {display: flex; flex-wrap: wrap; justify-content: space-around;}  
     /* To remove */ 
 
 
@@ -34,7 +211,7 @@
 
     /* Menu Bar */ 
 
-.SpaceBox {display: flex; justify-content: space-around; border-style: solid; height: 55px; border-color: #976038;}
+
 
 .TBox2 {flex-direction: row; margin: 10px 10px 10px 10px; border-style: inset; width: 250px;  height: 30px; border-color:   #976038;}
 
